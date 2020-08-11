@@ -1,0 +1,36 @@
+.product__star {
+    display: flex;
+    color: gold;
+}
+.product {
+    display: flex;
+    flex-direction: column;/*makes the flex arrange it in column instead of in row*/
+    max-height: 400px;
+    justify-content: flex-end;
+    min-width: 100px;
+    margin: 10px;
+    align-items: center; 
+    z-index: 1;/*compliments the background extension of the banner*/
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+}
+.product__image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.product__price{
+    margin-top: 5px;
+}
+.product__info {
+    height: 100px;
+    margin-bottom: 50px;
+    
+}
+.product > button {
+    border: 1px solid;
+    background-color: #f0c14b;
+    border-color: #a88734 #9c7e31 #846a29;
+}

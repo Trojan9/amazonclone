@@ -1,0 +1,63 @@
+.header {
+    background-color: #131921;
+    display: flex; /*enables all items in the header be on a row*/
+    align-items:center;
+    position: sticky;/*makes the header glued to the top even when we scrolldown it is still going to show*/
+    top: 0px;/*glues to the top*/
+    z-index: 100;/*ensures nothing is above it even when we scroll down*/
+}
+.header__logo {
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    object-fit: contain;/*prevents the object from resizing according to the screen size ,it keeps it fit in the screen*/
+    margin-top: 18px;/*adds space on top like padding top in flutter*/
+}
+.header__searchInput {
+ border: none;
+ height: 12px;
+ padding: 10px;
+ width: 100%;
+}
+.header__search {
+    display: flex;/*makes both the input and searchicon together*/
+    flex: 1;/*the enables the tag to automaticall allocate as much space with respect t0 the screen size*/
+}
+.header__searchicon {
+    background-color: orange;
+    padding: 5px;
+    height: 22px !important;
+
+}
+.header__nav {
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-evenly;/*just like mainaxisallignment in flutter*/
+
+}
+.hearder__link {
+
+    color: white;
+    text-decoration: none;/*this will remove the underline of the text i.e the text is underlined by default cause its a link*/
+}
+.header__option {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;/*this turns it into a column like in flutter*/
+}
+.header__optionbasketnumber{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.header__optionbasket{
+    display: flex;
+    align-items: center;
+}
+.header__optionlineone {
+    font-size: 10px;
+}
+.header__optionlinetwo{
+    font-size: 13px;
+    font-weight: 800;
+}

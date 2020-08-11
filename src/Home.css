@@ -1,0 +1,14 @@
+.home__image {
+    width: 100%;
+    /*then we add  gradient to the image ...comment out and uncomment the code below to see the difference*/
+    /*you can read about adding gradient to images on line using css*/
+    mask-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0)); 
+    z-index: -1;/*this makes the image gradient extends to the back of the product list..it can be applied to other projects take note*/
+    margin-bottom: -150px; /*this moves the product image up a bit*/
+}
+.home__row{
+    display: flex;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
